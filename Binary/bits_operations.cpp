@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -69,19 +68,33 @@ class BitsOps{
 int main(){
 	BitsOps bp;
 	bp.print_bits(40);
+	cout << '\n';
+
 	cout << "Modify kth bit - 0 to 1" << '\n';
 	bp.modify_kthbit_0to1(11, 2);
+	cout << '\n';
+
 	cout << "Modify kth bit - 1 to 0" << '\n';
 	bp.modify_kthbit_1to0(11, 1);
+	cout << '\n';
+
 	cout << "Invert k bit 0 to 1 and 1 to 0" << '\n';
 	bp.invert_kth_bit(11, 1);
 	bp.invert_kth_bit(11, 2);
+	cout << '\n';
+
 	cout << "Count ones in Number" << '\n';
 	cout << bp.count_ones_in_binary(11) << '\n' ;
+	cout << '\n';
+
 	cout << "Set all bits of 11 to 0 Except Last" << '\n';
 	bp.set_all_bits_to_0_except_last(11);
+	cout << '\n';
+
 	cout << "Invert all bits after last one" << '\n';
 	bp.invert_bits_after_last_one(10);
+	cout << '\n';
+
 	cout << "Power of Two" << '\n';
 	bp.is_power_of_two(8);
 	bp.is_power_of_two(9);
