@@ -24,9 +24,10 @@ set guifont=Consolas:h12
 
 ## My Vim Setting (mac)
 
-set number
+set number      "line numbers
+set showmatch   "highlight matching braces
 
-set tabstop=4
+set tabstop=4   
 
 set shiftwidth=4
 
