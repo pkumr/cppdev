@@ -5,7 +5,6 @@
 //  Created by Parveen Kumar on 7/11/20.
 //
 
-//#include <stdio.h>
 //header file for map
 #include <map>
 #include <iostream>
@@ -27,7 +26,7 @@ int main_map(){
     auto f = m.find("c"); //find return iterator
     m.erase(f); //erase takes iterator as input
     
-    //Search
+    //Search find() method. it returns an iterator
     string letter;
     cin>>letter;
     map<string, int>::iterator it = m.find(letter);
