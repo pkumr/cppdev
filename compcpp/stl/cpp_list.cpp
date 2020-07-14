@@ -30,7 +30,8 @@ int main_list(){
     l3.push_back("b");
     l3.push_back("c");
     l3.push_back("d");
-    
+
+    //Using Iterator (auto can be used in place of list<string>::iterator
     for(list<string>::iterator it = l3.begin(); it != l3.end(); it++){
         cout<< "element is : " << *it << " ";
     }
