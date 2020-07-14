@@ -45,7 +45,9 @@ int main_pq(){
         cin>> num;
         pq.push(num); //O(LogN) time
     }
-    //remove
+    //remove 
+    //first we have to get the element using top()
+    //then we can pop the element
     while (!pq.empty()) {
         cout << pq.top() << ", ";
         pq.pop();
