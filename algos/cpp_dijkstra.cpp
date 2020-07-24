@@ -18,6 +18,9 @@ typedef pair<int, ii>   iii;
 #define EPS 1e-9
 #define MAX_N 100010
 
+int V, E, s, u, v, w;
+vector<vii> AdjList;
+
 int main(){
     int V, s;
     vi dist(V, INF);
@@ -29,5 +32,12 @@ int main(){
         int d = front.first;
         int u = front.second;
         if(d > dist[u]) continue;
+        for(int j = 0; j < (int) AdjList[u].size(); j++){
+            ii v = AdjList[u][j];
+            if (dist[u] + v.second < dist[v.fist]){
+                dist[v.first] = dist[u] + v.second;
+                pq.push(ii(dist[v.first], v.first));
+            }
+        }
     }
 }
