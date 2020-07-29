@@ -7,8 +7,17 @@
 
 
 #include<iostream>
+#include<vector>
+
 
 using namespace std;
+
+typedef long long ll;
+typedef pair<int, int> ii;
+typedef vector<ii> vii;
+typedef vector<int> vi;
+
+#define INF 1000000000 //1B
 
 int main(){
 
