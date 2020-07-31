@@ -30,4 +30,21 @@ int main(){
     //ans = min(ans, new_computation); //min/max shortcut
     //
 
+    //*********** Ways to read input and print output**********
+    //Way#1 - Reading from inputs
+    //
+    //| Sample Input | Sample Output
+    //| 3            | 3
+    //| 1 2          | 12
+    //| 5 7          | 9
+    //| 6 3          |
+    //-------------------------------
+    //
+    //
+    int TC, a, b;
+    scanf("%d", &TC); //number of test cases
+    while(TC--){ //shortcut to repeat until 0
+        scanf("%d %d", &a, &b);
+        printf("%d\n", a + b);
+    }
 }
