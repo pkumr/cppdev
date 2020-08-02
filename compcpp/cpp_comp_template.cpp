@@ -65,14 +65,53 @@ int main(){
     //|--------------|
     //|              | Case 3: 9
     //|              |
-    //|              |
     //|              |------------------
 
     int x, y, z = 1;
-    while (scanf("%d %d", &a, &b) != EOF)
+    while (scanf("%d %d", &x, &y) != EOF)
         // the two '\n'
         printf("Case %d: %d\n\n", z++, x + y);
     //
-    //Some other problems
-
+    //Some other problems require us to output blank lines between
+    //test case. If we use the approach above, we will end up with
+    //an extra new line at the end of out output
+    //To handle, we can use following change
+    //
+    //| Sample Input | Sample Output
+    //| 1 2          | Case 1: 3
+    //| 5 7          | 
+    //| 6 3          | Case 2: 12
+    //|--------------|
+    //               | Case 3: 9
+    //               |--------------------
+    //
+    while(scanf("%d %d", &x, &y) != EOF){
+        if(z > 1) printf("\n"); //2nd/more cases
+        printf("Case %d: %d\n", z++, a + b);
+    }
+    //**************Variable Number of Inputs****************
+    //Way#3: Reading inputs (variable number)
+    //For each test case (each input line), we are now given
+    //an integer k (k >= 1), followed by k integers.
+    //Output the sum of these k integers.
+    //Assuming that the input is terminated by the EOF
+    //signal and we do not require case numbering, following 
+    //can be used
+    //
+    //| Sample Input | Sample Output
+    //| 1 1          | 1
+    //| 2 3 4        | 7
+    //| 3 8 1 1      | 10
+    //| 4 7 2 9 3    | 21
+    //| 5 1 1 1 1 1  | 5
+    //|----------------------------------------------------
+    int k, ans, v;
+    while(scanf("%d", &k) != EOF) {
+        ans = 0;
+        while(k--){
+            scanf("%d", &v);
+            ans += v;
+        }
+        printf("%d\n", ans);
+    }
 }
