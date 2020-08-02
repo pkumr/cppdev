@@ -48,4 +48,31 @@ int main(){
         scanf("%d %d", &a, &b);
         printf("%d\n", a + b);
     }
+
+    //****************Case Numbers and Blank Lines **************
+    //Way#2 - Reading from intputs and Case outputs
+    //
+    //Some problems with multiple test cases require the output
+    //of each test case to be numbered sequentially. Some also
+    //require a blannk line after each test case.
+    //Output format : "Case [NUMBER]: [ANSWER]" followed by
+    //blank line for each test case.
+    //
+    //| Sample Input | Sample Output
+    //| 1 2          | Case 1: 3
+    //| 5 7          | 
+    //| 6 3          | Case 2: 12
+    //|--------------|
+    //|              | Case 3: 9
+    //|              |
+    //|              |
+    //|              |------------------
+
+    int x, y, z = 1;
+    while (scanf("%d %d", &a, &b) != EOF)
+        // the two '\n'
+        printf("Case %d: %d\n\n", z++, x + y);
+    //
+    //Some other problems
+
 }
