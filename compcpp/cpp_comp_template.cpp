@@ -10,6 +10,7 @@
 #include<vector>
 #include<algorithm>
 #include<stdio.h>
+#include<ios>
 
 using namespace std;
 
