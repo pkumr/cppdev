@@ -1,3 +1,9 @@
+/**
+ * Binary Numbers Examples
+ * Created by Parveen on 7/26/2020
+ *
+ *
+ */
 #include <iostream>
 using namespace std;
 
