@@ -1,9 +1,8 @@
-//
-//  cpp_dfs.cpp
-//  compcode
-//
-//  Created by Parveen Kumar on 7/16/20.
-//
+/**
+  cpp_dfs.cpp
+  compcode
+  Created by Parveen Kumar on 7/16/20.
+*/
 
 #include <stdio.h>
 #include <cstdio>
